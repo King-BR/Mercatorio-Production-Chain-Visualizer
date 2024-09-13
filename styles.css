@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container Styles */
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+#sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar h2 {
+    margin-top: 0;
+}
+
+#sidebar select, #sidebar button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Main Content Styles */
+#main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Tree Container Styles */
+#tree-container {
+    padding: 10px;
+}
+
+/* Recipe Styles */
+.recipe {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.recipe-guided {
+    border-color: #4CAF50;
+}
+
+.recipe-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.recipe-info {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Input Styles */
+input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Choice Styles */
+.choice-container {
+    margin-top: 10px;
+}
+
+.sub-recipe, .buy-input {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.buy-input {
+    background-color: #fff3e0;
+}

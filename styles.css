@@ -1,117 +1,68 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-/* Container Styles */
-#container {
-    display: flex;
-    height: 100vh;
+h2, h3 {
+  color: #333;
 }
 
-/* Sidebar Styles */
-#sidebar {
-    width: 250px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-right: 1px solid #ddd;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+#recipe-info {
+  margin-bottom: 20px;
 }
 
-#sidebar h2 {
-    margin-top: 0;
+.node {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
 }
 
-#sidebar select, #sidebar button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 16px;
+.node-line {
+  margin-left: 20px;
 }
 
-/* Main Content Styles */
-#main {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
+#production-tree {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
 }
 
-/* Tree Container Styles */
-#tree-container {
-    padding: 10px;
+.node-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
 }
 
-/* Recipe Styles */
-.recipe {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #fff;
+.connection-line {
+  width: 2px;
+  height: 40px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.recipe-guided {
-    border-color: #4CAF50;
+.horizontal-line {
+  width: 40px;
+  height: 2px;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.recipe-header {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.recipe-info {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-button {
-    background-color: #007bff;
-    border: none;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Input Styles */
 input[type="number"] {
-    width: 100px;
-    padding: 5px;
-    font-size: 16px;
+  margin-bottom: 10px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-/* Choice Styles */
-.choice-container {
-    margin-top: 10px;
-}
-
-.sub-recipe, .buy-input {
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-.buy-input {
-    background-color: #fff3e0;
+select {
+  margin-bottom: 10px;
 }
